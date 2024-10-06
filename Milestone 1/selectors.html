@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        *{
+            background-color: rgb(241, 235, 227);
+        }
+        .heading{
+            color: gold;
+            font-weight: bold;
+        }
+        #toph{
+            color: blue;
+            font-size: 24px;
+            background-color: antiquewhite;
+            text-align: center;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        #both{
+            color: red;
+            font-size: 18px;
+            background-color: lightgray;
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px;
+            margin-top: 15px;
+        }
+        li{
+            font-size: 16px;
+            margin-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 5px;
+            border: 1px solid black;
+            background-color: lightyellow;
+            border-radius: 5px;
+            cursor: not-allowed;
+        }
+        span{
+            color: green;
+            font-size: 14px;
+            margin-left: 25px;
+            border: 0.5px solid green;
+            padding: 2px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="heading" id="toph">Exploring Selectors</h2>
+    <h3 class="heading" id="both">Selector Types</h3>
+    <ol>
+        <li>Element</li>
+        <span>Selects by using tag names</span>
+        <li>ID</li>
+        <span>I have to give an ID to a specific element</span>
+        <li>Class</li>
+        <span>I can give multiple classes to an element</span>
+        <li>Universal</li>
+        <span>Selects all elements of a given type</span>
+    </ol>
+    
+</body>
+</html>

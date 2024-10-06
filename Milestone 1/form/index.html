@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <h2>Please fill up the form</h2>
+        <form action="">
+          <label for="name">
+            Your name:
+            <input type="text" name="" id="name" placeholder="Your name" />
+          </label>
+          <label for="email">
+            Your email:
+            <input type="email" name="" id="email" placeholder="Your email" />
+          </label>
+          <label for="phone"
+            >Your phone:
+            <input type="text" placeholder="Your phone" name="" id="phone" />
+          </label>
+          <fieldset>
+            <legend>Pick one</legend>
+            <label for="">
+              <input type="radio" name="pick" id="pick" />Money
+            </label>
+            <label for="">
+                <input type="radio" name="pick" id="">Power
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>
+                Pick multiple
+            </legend>
+            <label for="">
+                <input type="checkbox" name="" id="">Money
+            </label>
+            <label for="">
+                <input type="checkbox" name="" id="">Power
+            </label>
+            <label for="">
+                <input type="checkbox" name="" id="">Strength
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Special</legend>
+            <textarea name="" id="" cols="25" rows="5"></textarea>
+          </fieldset>
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculator Form</title>
+		<style>
+			
+			.form-container {
+				background-color: #2c2c2c;
+				padding: 20px;
+				border-radius: 10px;
+				width: 350px;
+			}
+
+			form {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.input-group {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 10px;
+			}
+
+			input[type="text"],
+			select {
+				background-color: #333;
+				border: none;
+				color: white;
+				padding: 10px;
+				border-radius: 5px;
+				width: 48%;
+				box-sizing: border-box;
+			}
+
+			select {
+				width: 100%;
+			}
+
+			
+			select option[value=""][disabled] {
+				color: #bbb;
+			}
+
+			button {
+				background-color: #ff5733;
+				color: white;
+				padding: 10px;
+				border: none;
+				border-radius: 25px;
+				cursor: pointer;
+				font-size: 16px;
+				width: 100%;
+				margin-top: 20px;
+			}
+
+			button:hover {
+				background-color: #e04e2a; /* Darker shade on hover */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="form-container">
+			<form>
+				<div class="input-group">
+					<input type="text" placeholder="Height/cm" />
+					<input type="text" placeholder="Weight/kg" />
+				</div>
+				<div class="input-group">
+					<input type="text" placeholder="Age" />
+					<select>
+						<option value="" disabled selected>Sex</option>
+						<option>Male</option>
+						<option>Female</option>
+					</select>
+				</div>
+				<div class="input-group">
+					<select>
+						<option value="" disabled selected>
+							Select an activity factor
+						</option>
+						<option>Sedentary</option>
+						<option>Light Activity</option>
+						<option>Moderate Activity</option>
+						<option>Active</option>
+						<option>Very Active</option>
+					</select>
+				</div>
+				<button type="submit">Calculate</button>
+			</form>
+		</div>
+	</body>
+</html>

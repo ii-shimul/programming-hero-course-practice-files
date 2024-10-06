@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .post{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            border: 2px solid lightblue;
+            border-radius: 5px;
+        }
+        @media screen and (max-width:576px) {
+            .post{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="post">
+        <div class="img">
+          <img src="../../bonus/burger.png" alt="" />
+        </div>
+        <div class="text">
+          <h3>Burger</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe et
+            non doloremque! Ea neque voluptate provident perferendis maiores
+            ipsa, asperiores eum, sit nihil facilis minima fugit corporis
+            voluptas. Quod, expedita.
+        </p>
+        <button>read more</button>
+        </div>
+      </div>
+      <div class="post">
+        <div class="img">
+          <img src="../../bonus/pizza.png" alt="" />
+        </div>
+        <div class="text">
+          <h3>Pizza</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe et
+            non doloremque! Ea neque voluptate provident perferendis maiores
+            ipsa, asperiores eum, sit nihil facilis minima fugit corporis
+            voluptas. Quod, expedita.
+        </p>
+        <button>read more</button>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

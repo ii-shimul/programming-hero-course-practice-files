@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Transition</title>
+		<style>
+			.box {
+				width: 100px;
+				height: 100px;
+				border: 2px solid tomato;
+				background-color: peachpuff;
+				/* transition: width 1s linear 1s, background-color 1s ease-in 1s; */
+				transition: transform 2s ease-in;
+			}
+			.box:hover {
+				/* width: 200px;
+            background-color: rgb(174, 163, 49); */
+				transform: rotate(45deg) scale(1.5) translateX(150px);
+			}
+			.field {
+				border: 2px solid steelblue;
+			}
+			.bat {
+				transition: transform 0.1s;
+			}
+			.ball {
+				width: 50px;
+				height: 50px;
+				background-color: brown;
+				border-radius: 50%;
+                position: relative;
+                left: 515px;
+                transition: transform 1s ease-out 0.11s;
+			}
+			.field:hover .bat {
+				transform: rotate(-60deg);
+				transform-origin: top right;
+			}
+            .field:hover .ball{
+                transform: translate(1000px, -500px);
+            }
+		</style>
+	</head>
+	<body>
+		<div class="box">Box 1</div>
+		<div class="box">Box 2</div>
+		<div class="box">Box 3</div>
+		<div class="field">
+			<img src="bat.png" alt="" class="bat" />
+			<div class="ball"></div>
+		</div>
+	</body>
+</html>

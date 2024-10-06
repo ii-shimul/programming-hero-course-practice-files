@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+
+<body>
+  <h1>Lorem ipsum dolor sit amet.</h1>
+  <ul>
+    <li>html</li>
+    <li>css</li>
+    <li>js</li>
+    <li id="dom">dom</li>
+  </ul>
+  <button onclick="red()">RED</button>
+  <br>
+  <h1 id="click">onclick</h1>
+  <button onclick="handleOnclick()">onclick</button>
+  <button id="event">addEventListener</button>
+  <script src="events.js"></script>
+  <script>
+    // with onclick
+    function handleOnclick() {
+      const handleText = document.getElementById('click');
+      handleText.innerText = 'Changed by onclick';
+    }
+    
+    // with addeventlistener
+    document.getElementById('event').addEventListener('click', function(){
+      const handleText = document.getElementById('click');
+      handleText.innerText = 'Changed by addEventListener';
+    })
+  </script>
+</body>
+
+</html>

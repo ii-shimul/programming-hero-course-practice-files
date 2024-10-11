@@ -1,0 +1,7 @@
+What is javascript?
+
+Javascript is a JIT(Just in Time) Compiled, multi-paradigm, prototype based, 
+dynamically typed, high abstraction, auto garbage collector programming language.
+
+JS is ran by V8 Engine of Chrome.
+It is single threaded.
